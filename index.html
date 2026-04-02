@@ -36,8 +36,7 @@
   }
 
   .page-wrap {
-    max-width: 720px;
-    margin: 0 auto;
+    width: 100%;
     background: var(--bg_color);
     position: relative;
     overflow: hidden;
@@ -191,6 +190,9 @@
      ══════════════════════════════════════ */
   .fetuses-area {
     padding: 70px 0 50px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .fetuses-grid {
     display: flex;
@@ -228,6 +230,10 @@
   .about-area {
     padding: 60px 40px;
     border-top: 1px solid rgba(255,255,255,0.06);
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
   }
   .about-area .tp-title {
     color: var(--white_color);
@@ -361,38 +367,35 @@
   /* Carousel wrapper */
   .carousel-wrap {
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     margin-top: 24px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding: 0 20px;
   }
   .pricing-grid {
-    display: flex; gap: 16px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    padding: 20px 12px;
-    scrollbar-width: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
   }
-  .pricing-grid::-webkit-scrollbar { display: none; }
 
   .pricing-area .card {
-    width: 280px;
-    min-width: 280px;
-    max-width: 280px;
-    flex-shrink: 0;
+    width: 100%;
+    min-width: 0;
+    max-width: none;
     padding: 28px 22px;
     border-radius: 5px;
     background: var(--card_bg);
-    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-                box-shadow 0.5s ease,
-                border-color 0.5s ease,
-                opacity 0.5s ease;
-    border: 1px solid rgba(255,255,255,0.06);
-    scroll-snap-align: start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border: 1px solid rgba(127, 0, 255, 0.25);
     display: flex;
     flex-direction: column;
-    opacity: 0.45;
-    transform: scale(0.93);
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(127, 0, 255, 0.08);
   }
   .pricing-area .card.active-card {
     opacity: 1;
@@ -509,10 +512,9 @@
     background: var(--main_color); color: var(--white_color);
   }
 
-  /* Carousel nav arrows */
+  /* Carousel nav arrows (hidden — grid layout used instead) */
   .carousel-nav {
-    display: flex; justify-content: center;
-    gap: 16px; margin-top: 20px;
+    display: none;
   }
   .carousel-nav button {
     width: 46px; height: 46px;
@@ -529,10 +531,9 @@
     background: var(--main_color);
     border-color: var(--main_color);
   }
-  /* Carousel dots */
+  /* Carousel dots (hidden — grid layout used instead) */
   .carousel-dots {
-    display: flex; justify-content: center;
-    gap: 8px; margin-top: 12px;
+    display: none;
   }
   .carousel-dots span {
     width: 8px; height: 8px;
@@ -550,7 +551,13 @@
   /* ══════════════════════════════════════
      COURSE DETAIL CARDS (Tier pages)
      ══════════════════════════════════════ */
-  .course-list { padding: 36px 40px 44px; }
+  .course-list {
+    padding: 36px 40px 44px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
   .course-card {
     background: var(--card_bg);
     border: 1px solid rgba(255,255,255,0.08);
@@ -742,6 +749,10 @@
      ══════════════════════════════════════ */
   .notes-area {
     padding: 0px 40px 40px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
   }
   .notes-area h3 {
     font-size: 20px; font-weight: 700;
