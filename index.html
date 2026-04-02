@@ -384,7 +384,7 @@
   }
   .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px 0;
   }
@@ -1227,52 +1227,7 @@ function showTab(t) {
 }
 
 /* Carousel */
-(function() {
-  var carousel = document.getElementById("workshopCarousel");
-  if (!carousel) return;
-  var cards = carousel.querySelectorAll(".card");
-  var dotsWrap = document.getElementById("carouselDots");
-
-  // Build dots
-  cards.forEach(function(_, i) {
-    var dot = document.createElement("span");
-    if (i === 0) dot.classList.add("active");
-    dot.addEventListener("click", function() { goTo(i); });
-    dotsWrap.appendChild(dot);
-  });
-
-  function updateActive() {
-    var scrollLeft = carousel.scrollLeft;
-    var cardWidth = cards[0].offsetWidth + 16;
-    var idx = Math.round(scrollLeft / cardWidth);
-    dotsWrap.querySelectorAll("span").forEach(function(d, i) {
-      d.classList.toggle("active", i === idx);
-    });
-    // Highlight visible cards
-    cards.forEach(function(card, i) {
-      var cardLeft = i * cardWidth - scrollLeft;
-      var inView = cardLeft >= -20 && cardLeft < carousel.offsetWidth - 40;
-      card.classList.toggle("active-card", inView);
-    });
-  }
-
-  carousel.addEventListener("scroll", updateActive);
-  // Set initial active state — run immediately and also after layout
-  updateActive();
-  setTimeout(updateActive, 200);
-  setTimeout(updateActive, 500);
-  window.addEventListener("load", updateActive);
-
-  window.scrollCarousel = function(dir) {
-    var cardWidth = cards[0].offsetWidth + 16;
-    carousel.scrollBy({ left: dir * cardWidth, behavior: "smooth" });
-  };
-
-  window.goTo = function(idx) {
-    var cardWidth = cards[0].offsetWidth + 16;
-    carousel.scrollTo({ left: idx * cardWidth, behavior: "smooth" });
-  };
-})();
+// Carousel JS removed — pricing cards now use CSS grid layout
 </script>
 </body>
 </html>
