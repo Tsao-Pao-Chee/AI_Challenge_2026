@@ -767,6 +767,19 @@
     margin-left: auto; margin-right: auto;
     opacity: 0.7;
   }
+  .cta-btn-row {
+    display: flex; flex-wrap: wrap; gap: 16px;
+    justify-content: center; align-items: center;
+  }
+  .cta-btn-row .default-btn.btn-outline {
+    background: transparent;
+    border: 2px solid var(--main_color);
+    color: var(--main_color);
+  }
+  .cta-btn-row .default-btn.btn-outline:hover {
+    background: var(--main_color);
+    color: #fff;
+  }
 
   /* ══════════════════════════════════════
      NOTES BOX
@@ -1066,8 +1079,11 @@
     <!-- CTA -->
     <div class="cta-section">
       <h3>Ready to Level Up Your <span class="grd-color-1">AI Skills</span>?</h3>
-      <p class="cta-sub">Discuss with your managers about the tier and program that best align with your role and development goals.</p>
-      <a href="https://forms.office.com/pages/responsepage.aspx?id=XKURIwjVOk6uuEegixVqpTQtryTMTnREo0x_hrBWJN9UOTEzNTlRNzlMT1NMNjgzVjVQOEhMMUUyNy4u&route=shorturl" class="default-btn" target="_blank">Register Now <i class="ri-arrow-right-line"></i></a>
+      <p class="cta-sub">Discuss with your managers about the tier and programme that best aligns with your role and development goals.</p>
+      <div class="cta-btn-row">
+        <a href="https://forms.office.com/pages/responsepage.aspx?id=XKURIwjVOk6uuEegixVqpTQtryTMTnREo0x_hrBWJN9UOTEzNTlRNzlMT1NMNjgzVjVQOEhMMUUyNy4u&route=shorturl" class="default-btn" target="_blank">Register for Tier 1 <i class="ri-arrow-right-line"></i></a>
+        <a href="https://ap9.bipocloud.com/IMC/Login" class="default-btn btn-outline" target="_blank">Register for Tier 2 <i class="ri-arrow-right-line"></i></a>
+      </div>
     </div>
   </div>
 
@@ -1252,6 +1268,29 @@
             <span class="date-chip">14 &amp; 15 May (Thu &amp; Fri)</span>
             <span class="date-chip">TBC</span>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BIPO Registration Instructions -->
+    <div class="notes-area">
+      <h3><i class="ri-login-box-line" style="margin-right:8px;font-size:22px;vertical-align:middle;"></i> How to Register via BIPO</h3>
+      <div class="steps-list">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div><p>Access BIPO at <a href="https://ap9.bipocloud.com/IMC/Login" target="_blank" style="color:var(--main_color);text-decoration:underline;">ap9.bipocloud.com/IMC/Login</a> and login with your credentials.</p></div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div><p>At the Home Page, navigate to <strong style="color:var(--white_color);">Training</strong> &rsaquo; <strong style="color:var(--white_color);">Apply Internal</strong> &rsaquo; <strong style="color:var(--white_color);">Open Class</strong>.</p></div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div><p>Click the <strong style="color:var(--white_color);">magnifying glass icon</strong> to view the Open Class details and find the relevant workshop.</p></div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">4</div>
+          <div><p>Click <strong style="color:var(--white_color);">"Apply"</strong> at the bottom of the Open Class listing to submit your registration for supervisor approval.</p></div>
         </div>
       </div>
     </div>
