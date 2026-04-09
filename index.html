@@ -900,6 +900,26 @@
     font-family: "Plus Jakarta Sans", sans-serif;
   }
   .step-item p { margin: 0; padding-top: 4px; font-size: var(--font-size); }
+  .bipo-instr {
+    margin-top: 14px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 14px 18px;
+  }
+  .bipo-instr-title {
+    font-size: 13px; font-weight: 600;
+    color: var(--content_color); opacity: 0.75;
+    margin: 0 0 10px;
+  }
+  .bipo-instr-list {
+    margin: 0; padding-left: 18px;
+    display: flex; flex-direction: column; gap: 6px;
+  }
+  .bipo-instr-list li {
+    font-size: 13px; color: var(--content_color);
+    opacity: 0.8; line-height: 1.5;
+  }
 </style>
 </head>
 <body>
@@ -1078,7 +1098,18 @@
         </div>
         <div class="step-item">
           <div class="step-num">4</div>
-          <div><p>Register for the tier and workshop(s) that best fit your needs. <strong style="color:var(--white_color);">Places are limited</strong>, and course fees will be charged to your cost centre.</p></div>
+          <div>
+            <p>Register for the tier and workshop(s) that best fit your needs. <strong style="color:var(--white_color);">Places are limited</strong>, and course fees will be charged to your cost centre.</p>
+            <div class="bipo-instr">
+              <p class="bipo-instr-title"><i class="ri-information-line" style="margin-right:6px;vertical-align:middle;"></i>Registration is done via BIPO. Follow these steps:</p>
+              <ol class="bipo-instr-list">
+                <li>Access <a href="https://ap9.bipocloud.com/IMC/Login" target="_blank" style="color:var(--main_color);text-decoration:underline;">ap9.bipocloud.com/IMC/Login</a> and login with your credentials.</li>
+                <li>At the Home Page, navigate to <strong style="color:var(--white_color);">Training</strong> &rsaquo; <strong style="color:var(--white_color);">Apply Internal</strong> &rsaquo; <strong style="color:var(--white_color);">Open Class</strong>.</li>
+                <li>Click the <strong style="color:var(--white_color);">magnifying glass icon</strong> to view the Open Class details and find the relevant workshop.</li>
+                <li>Click <strong style="color:var(--white_color);">"Apply"</strong> at the bottom of the Open Class listing to submit your registration for supervisor approval.</li>
+              </ol>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -1091,7 +1122,6 @@
         <a href="https://forms.office.com/pages/responsepage.aspx?id=XKURIwjVOk6uuEegixVqpTQtryTMTnREo0x_hrBWJN9UOTEzNTlRNzlMT1NMNjgzVjVQOEhMMUUyNy4u&route=shorturl" class="default-btn" target="_blank">Register for Tier 1 <i class="ri-arrow-right-line"></i></a>
         <a href="https://ap9.bipocloud.com/IMC/Login" class="default-btn" target="_blank">Register for Tier 2 <i class="ri-arrow-right-line"></i></a>
       </div>
-      <p class="cta-footnote">* Tier 2 registration is done via BIPO. See the <a onclick="showTab('tier2')" style="color:var(--main_color);text-decoration:underline;cursor:pointer;">Tier 2 page</a> for step-by-step registration instructions.</p>
     </div>
   </div>
 
@@ -1169,6 +1199,29 @@
             <span class="date-chip">28 Apr (Tue)</span>
             <span class="date-chip">8 May (Fri)</span>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BIPO Registration Instructions -->
+    <div class="notes-area">
+      <h3><i class="ri-login-box-line" style="margin-right:8px;font-size:22px;vertical-align:middle;"></i> How to Register via BIPO</h3>
+      <div class="steps-list">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div><p>Access BIPO at <a href="https://ap9.bipocloud.com/IMC/Login" target="_blank" style="color:var(--main_color);text-decoration:underline;">ap9.bipocloud.com/IMC/Login</a> and login with your credentials.</p></div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div><p>At the Home Page, navigate to <strong style="color:var(--white_color);">Training</strong> &rsaquo; <strong style="color:var(--white_color);">Apply Internal</strong> &rsaquo; <strong style="color:var(--white_color);">Open Class</strong>.</p></div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div><p>Click the <strong style="color:var(--white_color);">magnifying glass icon</strong> to view the Open Class details and find the relevant workshop.</p></div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">4</div>
+          <div><p>Click <strong style="color:var(--white_color);">"Apply"</strong> at the bottom of the Open Class listing to submit your registration for supervisor approval.</p></div>
         </div>
       </div>
     </div>
