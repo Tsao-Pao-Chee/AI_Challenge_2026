@@ -974,7 +974,15 @@
     }
     .tier-hero h2 { font-size: 24px; }
     .tier-desc { font-size: 14px; }
-    .back-link { top: 16px; }
+    .tier-hero > .back-link {
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+      margin-bottom: 16px;
+      display: block;
+      text-align: left;
+    }
 
     /* ── Section titles ── */
     .section-title { margin-bottom: 24px; }
