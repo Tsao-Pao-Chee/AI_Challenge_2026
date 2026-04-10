@@ -945,6 +945,130 @@
     font-size: 13px; color: var(--content_color);
     opacity: 0.8; line-height: 1.5;
   }
+
+  /* ══════════════════════════════════════════════════
+     MOBILE RESPONSIVE  —  max-width: 768px
+     Desktop layout is completely untouched above.
+     ══════════════════════════════════════════════════ */
+  @media (max-width: 768px) {
+
+    /* ── Navigation ── */
+    .nav-logo { display: none !important; }
+    .tab-nav { padding: 0 8px; gap: 4px; }
+    .tab-btn { padding: 12px 6px; font-size: 12px; gap: 4px; }
+    .tab-btn i { font-size: 14px; }
+
+    /* ── Hero banner ── */
+    .banner-area {
+      min-height: 320px;
+      padding: 40px 20px 36px;
+    }
+    .banner-area h1 { font-size: 28px; }
+    .banner-area .hero-sub { font-size: 14px; }
+    .scroll-down { margin-top: 24px; }
+
+    /* ── Tier hero ── */
+    .tier-hero {
+      min-height: 300px;
+      padding: 50px 20px 28px;
+    }
+    .tier-hero h2 { font-size: 24px; }
+    .tier-desc { font-size: 14px; }
+    .back-link { top: 16px; }
+
+    /* ── Section titles ── */
+    .section-title { margin-bottom: 24px; }
+    .section-title h2 { font-size: 22px; }
+
+    /* ── About / overview area ── */
+    .about-area { padding: 40px 20px; }
+    .about-area h2 { font-size: 22px; }
+
+    /* ── Feature boxes — collapse to single column ── */
+    .fetuses-area { padding: 40px 16px 32px; }
+    .fetuses-grid {
+      flex-direction: column;
+      gap: 0;
+    }
+    .single-fetuses-box {
+      border-right: none;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding: 20px 8px;
+    }
+    .single-fetuses-box:last-child { border-bottom: none; }
+    .single-fetuses-box .icon i { font-size: 36px; }
+
+    /* ── Tier cards ── */
+    .tier-cards { flex-direction: column; gap: 16px; }
+    .tier-card { padding: 22px 18px; }
+    .tier-card h3 { font-size: 18px; }
+
+    /* ── Stats counters ── */
+    .sub-counters { flex-wrap: wrap; gap: 16px; }
+    .sub-counter h3 { font-size: 30px; }
+
+    /* ── Pricing / schedule grid — single column ── */
+    .pricing-area { padding: 40px 16px 28px; }
+    .pricing-grid {
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    .pricing-area .card { padding: 18px 16px; }
+    .pricing-area .card_title { font-size: 17px; min-height: 0; }
+    .pricing-area .card:hover { transform: none; }
+
+    /* ── Notes / steps area ── */
+    .notes-area { padding: 0 16px 28px; }
+    .notes-area h3 { font-size: 18px; }
+    .step-item { padding: 14px 14px; gap: 12px; }
+
+    /* ── Course list ── */
+    .course-list { padding: 20px 16px 32px; gap: 16px; }
+    .cc-header { padding: 18px 16px 14px; }
+    .course-card[class*="cc-bg-"] .cc-header { padding: 22px 18px 24px; }
+    .cc-name { font-size: 16px; }
+
+    /* ── Course meta — stack vertically ── */
+    .cc-meta {
+      flex-direction: column;
+      gap: 0;
+    }
+    .cc-meta-item {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      border-right: none;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      padding: 10px 16px;
+    }
+    .cc-meta-item:last-child { border-bottom: none; }
+
+    /* ── Course dates ── */
+    .cc-dates { padding: 12px 16px 16px; }
+    .date-chips { justify-content: flex-start; }
+
+    /* ── CTA section ── */
+    .cta-section { padding: 40px 20px; }
+    .cta-section h3 { font-size: 20px; }
+    .cta-btn-row { flex-direction: column; align-items: stretch; }
+    .cta-btn-row .default-btn { text-align: center; justify-content: center; }
+
+    /* ── Footer ── */
+    .footer-area { padding: 32px 16px 0; }
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    .footer-content .logo {
+      justify-content: center;
+      flex-direction: row;
+      gap: 16px;
+    }
+    .footer-bottom { padding: 16px 16px; font-size: 12px; }
+
+    /* ── Disable hover scale on touch devices ── */
+    .active-card:hover { transform: none; }
+  }
 </style>
 </head>
 <body>
